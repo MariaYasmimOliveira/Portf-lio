@@ -1,0 +1,19 @@
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+.bg-custom-purple { background-color: #E0B0FF; } 
+.bg-custom-dark-purple { background-color: #C084FC; } 
+.bg-custom-footer { background-color: #BD839D; } 
+
+.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+ .project-card:hover .project-overlay {
+    opacity: 1;
+}

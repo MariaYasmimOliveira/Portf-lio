@@ -3,50 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Currículo</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/jacascript" src="script"></script>
-    <script src="https://kit.fontawesome.com/7f679fafc4.js" crossorigin="anonymous"></script>
+    <title>Maria Yasmim | Desenvolvedora Web</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
 </head>
-<body>
-    <header class="herader">
-        <nav class="main-menu">
-        
-            <ul class="menu-links">
-                <li>
-                    <a href="#about">Sobre</a>
-                </li>
+<body class="bg-custom-purple text-gray-900">
 
-                <li>
-                    <a href="#experience">Experiência</a>
-                </li>
+    <!-- Navegação -->
+    <nav class="fixed w-full z-50 bg-custom-purple/80 backdrop-blur-md border-b border-purple-200">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="bg-purple-300 px-4 py-1 rounded-full font-semibold text-purple-900 text-sm md:text-base">
+                MARIA YASMIM DE OLIVEIRA
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium text-purple-900 uppercase text-xs tracking-widest">
+                <a href="#" class="hover:text-white transition">Home</a>
+                <a href="#sobre" class="hover:text-white transition">Sobre</a>
+                <a href="#projetos" class="hover:text-white transition">Projetos</a>
+                <a href="#contato" class="hover:text-white transition">Contato</a>
+            </div>
+        </div>
+    </nav>
 
-                <li>
-                    <a href="#experience">Ensino</a>
-                </li>
-            </ul>  
-        
+    <!-- Hero Section -->
+    <header class="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 pt-20 max-w-6xl mx-auto">
+        <div class="md:w-1/2 space-y-6 text-center md:text-left">
+            <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+                Olá, sou <span class="text-purple-700">Maria Yasmim.</span>
+            </h1>
+            <p class="text-lg md:text-xl font-medium text-purple-800">
+                Desenvolvedora Web | Graduanda em TI
+            </p>
+            <p class="text-gray-700 max-w-md leading-relaxed italic">
+                "Transformando linhas de código em experiências digitais significativas, unindo a precisão da tecnologia com a sensibilidade do design."
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center md:justify-start pt-4">
+                <a href="#projetos" class="bg-purple-400 hover:bg-purple-500 text-white px-8 py-3 rounded-full transition shadow-lg font-semibold">Projetos</a>
+                <a href="#" class="bg-pink-300 hover:bg-pink-400 text-white px-8 py-3 rounded-full transition shadow-lg font-semibold">Currículo</a>
+            </div>
+        </div>
 
-        </nav>
+        <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center relative">
+            <!-- Foto e Ícones -->
+            <div class="relative w-64 h-64 md:w-80 md:h-80 bg-purple-400 rounded-full overflow-hidden border-4 border-white shadow-2xl">
+                <!-- Placeholder para sua foto -->
+                <div class="w-full h-full flex items-center justify-center"> <img src="imagens/foto de perfil.jpg" alt="Foto de perfil" class="w-full h-full rounded-full object-cover"/></div>
+            </div>
+            
+            <!-- Ícones Flutuantes (Representação Visual) -->
+            <div class="absolute -top-20 left-1/2 bg-white p-3 rounded-xl shadow-lg floating" style="animation-delay: 0s;">
+                <span class="font-bold text-orange-500"><img style="height: 30px; width: 30px;" src="imagens/html-5.png" alt="HTML5"></span>
+            </div>
+            <div class="absolute top-1/2 -left-2 bg-white p-3 rounded-xl shadow-lg floating" style="animation-delay: 1s;">
+                <span class="font-bold text-blue-500"><img style="height: 30px; width: 30px;" src="imagens/css-3.png" alt="CSS3"></span>
+            </div>
+            <div class="absolute -bottom-5 right-1/2 bg-white p-3 rounded-xl shadow-lg floating" style="animation-delay: 0.5s;">
+                <span class="font-bold text-yellow-500"><img style="height: 30px; width: 30px;" src="imagens/java.png" alt="JS"></span>
+            </div>
+            <div class="absolute top-1/4 -right-12 bg-white p-3 rounded-xl shadow-lg floating" style="animation-delay: 1.5s;">
+                <span class="font-bold text-blue-400"><img style="height: 30px; width: 30px;" src="imagens/python.png" alt="Python"></span>
+            </div>
+            <div class="absolute top-2 -left-6 bg-white p-3 rounded-xl shadow-lg floating" style="animation-delay: 1s;">
+                <span class="font-bold text-blue-500"><img style="height: 30px; width: 30px;" src="imagens/database.png" alt="CSS3"></span>
+            </div>
+        </div>
     </header>
 
-    <section id="about" class="about">
-        <div class="about-container">
-            <img src="imagens/foto de perfil.jpg" alt="foto do elenco da série Good-Boy">
+    <!-- Sobre Mim -->
+    <section id="sobre" class="py-20 px-6 max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8 underline decoration-purple-400 underline-offset-8">Sobre mim</h2>
+        <p class="text-lg leading-relaxed text-gray-800 mb-6">
+            Atualmente mergulhada no universo da Tecnologia da Informação, busco constantemente o equilíbrio entre a lógica estruturada e a criatividade visual. Acredito que o código é uma ferramenta para resolver problemas reais e criar conexões humanas.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+            <div class="bg-white/30 p-6 rounded-2xl">
+                <h3 class="font-bold text-purple-900 mb-2">Educação</h3>
+                <p>Graduanda em TI (UFMS)<br>Foco em Desenvolvimento Web e Dados</p>
+            </div>
+            <div class="bg-white/30 p-6 rounded-2xl">
+                <h3 class="font-bold text-purple-900 mb-2">Interesses</h3>
+                <p>UI/UX Design, Front-end,<br>Análise de Dados</p>
+            </div>
+            <div class="bg-white/30 p-6 rounded-2xl">
+                <h3 class="font-bold text-purple-900 mb-2">Soft Skills</h3>
+                <p>Comunicação Crítica,<br>Resolução de Problemas</p>
+            </div>
+        </div>
+    </section>
 
-            <div class="info-box">
-                <div class="text">
-                    <h3>Olá! Eu sou a</h3>
-                    <h1>Maria Yasmim de O. Simão</h1>
-                    <h4>Desenvolvedora Web em formação</h4>
+    <!-- Projetos -->
+    <section id="projetos" class="py-20 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 text-center">Projetos em Destaque</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card Projeto 1 -->
+            <div class="group relative bg-pink-200 h-64 rounded-3xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+                <div class="absolute inset-0 flex items-center justify-center text-pink-400 font-bold opacity-40 text-4xl">
+                    Projeto Águia
                 </div>
-                <div>
-                    <a href="https://github.com/MariaYasmimOliveira" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
-                    <a href="https://www.linkedin.com/in/maria-yasmim-sim%C3%A3o-8b5178222/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <div class="project-overlay absolute inset-0 bg-purple-900/80 flex flex-col items-center justify-center p-6 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <h3 class="text-white font-bold text-xl mb-2">Site Institucional Projeto Águia</h3>
+                    <p class="text-purple-200 text-sm mb-4">projeto de extensão universitária pela UFMS.</p>
+                    <a href="#" class="text-white border border-white px-4 py-2 rounded-full text-xs hover:bg-white hover:text-purple-900 transition">Ver Mais</a>
+                </div>
+            </div>
+
+            <!-- Card Projeto 2 -->
+            <div class="group relative bg-pink-200 h-64 rounded-3xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+                <div class="absolute inset-0 flex items-center justify-center text-pink-400 font-bold opacity-40 text-4xl">
+                    Amazonia Site
+                </div>
+                <div class="project-overlay absolute inset-0 bg-purple-900/80 flex flex-col items-center justify-center p-6 text-center opacity-0 group-hover:opacity-100 transition-opacity duratioan-300">
+                    <h3 class="text-white font-bold text-xl mb-2">Amazônia Site</h3>
+                    <p class="text-purple-200 text-sm mb-4">Apresentar, de forma clara e organizada, fatos e curiosidades sobre a Amazônia, sua biodiversidade, importância ambiental e os desafios que enfrenta, usando ferramentas básicas de front-end..</p>
+                    <a href="#" class="text-white border border-white px-4 py-2 rounded-full text-xs hover:bg-white hover:text-purple-900 transition">Ver Mais</a>
+                </div>
+            </div>
+
+            <!-- Card Projeto 3 -->
+            <div class="group relative bg-pink-200 h-64 rounded-3xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+                <div class="absolute inset-0 flex items-center justify-center text-pink-400 font-bold opacity-40 text-4xl">
+                    Portfolio
+                </div>
+                <div class="project-overlay absolute inset-0 bg-purple-900/80 flex flex-col items-center justify-center p-6 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <h3 class="text-white font-bold text-xl mb-2">Portfolio</h3>
+                    <p class="text-purple-200 text-sm mb-4">Este site é dedicado a documentar minha evolução nos estudos de computação</p>
+                    <a href="#" class="text-white border border-white px-4 py-2 rounded-full text-xs hover:bg-white hover:text-purple-900 transition">Ver Mais</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Rodapé / Contato -->
+    <footer id="contato" class="bg-custom-footer py-16 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center space-y-8 md:space-y-0">
+            <div class="space-y-6 w-full">
+                <!-- E-mail -->
+                <a href="mailto:yasmimoliveirasimao@gmail.com" class="flex items-center space-x-4 group">
+                    <div class="p-3 bg-black/10 rounded-xl group-hover:bg-white transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <span class="font-bold text-sm md:text-lg break-all">yasmimoliveirasimao@gmail.com</span>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/MariaYasmimOliveira" target="_blank" class="flex items-center space-x-4 group">
+                    <div class="p-3 bg-black/10 rounded-xl group-hover:bg-white transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </div>
+                    <span class="font-bold text-sm md:text-lg">github.com/MariaYasmimOliveira</span>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/maria-yasmim-oliveira-8b5178222/" target="_blank" class="flex items-center space-x-4 group">
+                    <div class="p-3 bg-black/10 rounded-xl group-hover:bg-white transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </div>
+                    <span class="font-bold text-sm md:text-lg break-all">linkedin.com/in/maria-yasmim-oliveira-8b5178222/</span>
+                </a>
+            </div>
+        </div>
+        <div class="mt-12 pt-8 border-t border-black/10 text-center text-sm font-medium">
+            &copy; 2024 Maria Yasmim Oliveira. Desenvolvido com &hearts; e código.
+        </div>
+    </footer>
 
 </body>
 </html>
